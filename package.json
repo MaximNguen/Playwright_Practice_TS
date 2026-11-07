@@ -1,0 +1,29 @@
+{
+  "name": "playwright-practice-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UI end-to-end test framework for the People Help System (Playwright + TypeScript)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:functional": "playwright test tests/functional",
+    "test:navigation": "playwright test tests/navigation",
+    "test:e2e": "playwright test tests/e2e",
+    "test:negative": "playwright test tests/negative",
+    "test:allure": "allure run -- playwright test",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:serve": "allure serve allure-results",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^24.19.2",
+    "allure": "^3.33.0",
+    "allure-js-commons": "^3.14.0",
+    "allure-playwright": "^3.14.0",
+    "dotenv": "^18.0.9",
+    "typescript": "^5.9.3"
+  }
+}
